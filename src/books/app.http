@@ -1,0 +1,136 @@
+GET http://localhost:8000/api/books
+
+
+ ###
+ //getting by id
+ 
+### Get a book by ID
+GET http://localhost:8000/api/books/1
+Content-Type: application/json
+###
+
+POST http://localhost:8000/api/books
+Content-Type: application/json
+
+{
+    "id": 1,
+    "title": "Queen of tears",
+    "author": "Kim SooHyun",
+    "year": "2023" 
+    
+}
+
+###
+
+POST http://localhost:8000/api/books
+Content-Type: application/json
+
+{
+    "id": 2,
+    "title": "Lovely runner",
+    "author": "Kim HyeHoon",
+    "year": "2013" 
+    
+}
+
+###
+
+
+POST http://localhost:8000/api/books
+Content-Type: application/json
+
+{
+    "id": 3,
+    "title": "The worst of evil",
+    "author": "Ji Chang Wook",
+    "year": "2003" 
+    
+}
+
+###
+
+POST http://localhost:8000/api/books
+Content-Type: application/json
+
+{
+    "id": 4,
+    "title": "Tempted",
+    "author": "Woo do hwan",
+    "year": "2015" 
+    
+}
+
+###
+
+POST http://localhost:8000/api/books
+Content-Type: application/json
+
+{
+    "id": 5,
+    "title": "Tempted",
+    "author": "Woo do hwan",
+    "year": "2015" 
+    
+}
+
+###
+###
+
+POST http://localhost:8000/api/books
+Content-Type: application/json
+
+{
+    "id": 6,
+    "title": "Tempted",
+    "author": "Woodohwan",
+    "year": "2015" 
+    
+}
+
+###
+
+
+POST http://localhost:8000/api/books
+Content-Type: application/json
+
+{
+    "id": 8,
+    "title": "Temptation",
+    "author": "Kimdohwang",
+    "year": "2018" 
+    
+}
+
+
+###
+
+POST http://localhost:8000/api/books
+Content-Type: application/json
+
+{
+    "id": 7,
+    "title": "Tempted",
+    "author": "Woodohwan",
+    "year": "2015" 
+    
+}
+###
+PUT http://localhost:8000/api/books/4
+Content-Type: application/json
+
+{
+    "year": "2010 "
+    
+     
+}
+###
+###
+DELETE http://localhost:8000/api/books/5
+
+###
+// get books by author
+
+GET http://localhost:8000/api/books/Kim SooHyun
+
+
+
