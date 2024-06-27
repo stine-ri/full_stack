@@ -2,12 +2,16 @@ import { serve } from '@hono/node-server'
 import { Hono } from 'hono'
 import "dotenv/config"
 import { bookRouter } from './books/books.router'
+import {cors} from 'hono/cors'
 const app = new Hono()
 
 //default route//
 app.get('/', (c) => {
   return c.text('the code is okay')
 })
+app.use(cors({
+  origin: "*"
+}))
 
 app.route("/api",bookRouter)
 
